@@ -10,10 +10,8 @@ At start the counter is zero
     Title Should Be  Laskuri
     Page Should Contain  nappia painettu 0 kertaa
 
-When counter has a nonzero value and it is reset the value becomes zero
+Set function sets value properly
     Go To  ${HOME_URL}
-    Click Button  Paina
-    Click Button  Paina
-    Click Button  Nollaa
-    Page Should Contain  nappia painettu 0 kertaa
-
+    Input Text  value  10
+    Click Button  Aseta
+    Page Should Contain  nappia painettu 10 kertaa
