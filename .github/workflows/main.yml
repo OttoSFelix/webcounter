@@ -28,3 +28,4 @@ jobs:
         working-directory: ./webcounter
       - name: Run robot tests
         run: bash run_robot_tests.sh
+        working-directory: ./webcounter
